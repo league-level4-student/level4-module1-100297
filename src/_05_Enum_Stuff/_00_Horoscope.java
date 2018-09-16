@@ -14,9 +14,11 @@ public class _00_Horoscope {
 	// 3. Make a main method to test your method
 	public static void main(String[] args) {
 		Zodiac a = Zodiac.AQUARIUS;
+		ptf(a);
+		
 	}
 
-	public void ptf(Zodiac a) {
+	public static void ptf(Zodiac a) {
 		switch (a) {
 		case ARIES: {
 			System.out.println("You will meet a ram in your future");
@@ -47,6 +49,31 @@ public class _00_Horoscope {
 			}
 		case LIBRA: {
 			System.out.println("You serve justice today");
+			break;
+			
+			}
+		case SCORPIO: {
+			System.out.println("You will be stung by a scorpion today");
+			break;
+			
+			}
+		case SAGITTARIUS: {
+			System.out.println("You will get a bullseye in archery today");
+			break;
+			
+			}
+		case CAPRICORN: {
+			System.out.println("You will eat Chevon underwater today");
+			break;
+			
+			}
+		case PISCES: {
+			System.out.println("You will dress up as a fish with someone");
+			break;
+			
+			}
+		case TAURUS: {
+			System.out.println("You will eat beef today");
 			break;
 			
 			}
