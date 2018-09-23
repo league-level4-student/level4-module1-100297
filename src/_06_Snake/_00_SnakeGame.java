@@ -87,13 +87,13 @@ public class _00_SnakeGame implements ActionListener, KeyListener {
 		//   of the game. The smaller the number, the faster it goes.
 		switch(choice) {
 		case "Expert":
-			timer.setDelay(1);
+			timer.setDelay(50);
 			break;
 		case "Moderate":
-			timer.setDelay(2);
+			timer.setDelay(100);
 			break;
 		case "Beginner":
-			timer.setDelay(1);
+			timer.setDelay(200);
 			break;
 		}
 		//3. start the timer
@@ -156,6 +156,7 @@ public class _00_SnakeGame implements ActionListener, KeyListener {
 		JOptionPane.showMessageDialog(null, "Your snake is dead");
 		//3. ask them if they want to play again.
 		if (JOptionPane.showConfirmDialog(null, "Do you want to play again") == 0) {
+		startGame();
 			snake.reset(foodLocation);
 			Random ran = new Random();
 			foodLocation.x = ran.nextInt(WIDTH);

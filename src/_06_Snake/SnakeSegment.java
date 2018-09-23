@@ -20,7 +20,8 @@ public class SnakeSegment {
 	}
 	
 	public void draw(Graphics g) {
+		System.out.println(this.location.x + "" + this.location.y);
 		g.setColor(Snake.SNAKE_COLOR);
-		g.drawRect(location.x * size, location.y * size, size, size);;
+		g.drawRect(location.x * size, location.y * size, size, size);
 	}
 }
